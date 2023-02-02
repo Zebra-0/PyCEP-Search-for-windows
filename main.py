@@ -1,7 +1,7 @@
 # codigo criado com intencao de evoluir nos estudos de python, com gui e consumo de api.
 # criado por Gabriel Hernandes
 # linkedin: https://br.linkedin.com/in/gabriel-hernandes-4a3b8b248?trk=people-guest_people_search-card
-# github: https://github.com/Gabriel-Hernandess/PyCep-Search
+# github: https://github.com/Gabriel-Hernandess/PyCEP-Search
 
 import requests
 from tkinter import *
