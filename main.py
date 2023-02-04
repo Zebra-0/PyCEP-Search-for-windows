@@ -63,7 +63,7 @@ program.minsize(1080, 800)
 program.maxsize(1080, 800)
 
 # definindo fundo do programa
-bg_img = Image.open("D:/Users/remote/Downloads/PyCEP-Search-main/PyCEP-Search-main/test.jpg")
+bg_img = Image.open("test.jpg")
 resized = bg_img.resize((1080, 800), Image.ANTIALIAS)
 img = ImageTk.PhotoImage(resized)
 Background = Label(program, image=img).place(x=0, y=0)
