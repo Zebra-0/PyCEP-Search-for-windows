@@ -2,15 +2,16 @@
 # criado por Gabriel Hernandes
 # linkedin: https://br.linkedin.com/in/gabriel-hernandes-4a3b8b248?trk=people-guest_people_search-card
 # github: https://github.com/Gabriel-Hernandess/PyCEP-Search
+# Fork 
+# Fork realizado por https://github.com/Zebra-0/PyCEP-Search-for-windows/ para rodar no windows.
+# Também fiz um leve ajuste para exibir a rua no mapa, ao invés de mostrar o bairro.
+# pip install Pillow
 
 import requests
 from tkinter import *
-from tkmacosx import Button
+from tkinter import Button
 from PIL import ImageTk,Image
-import json
-from tkinter import ttk
 from tkinter import messagebox
-import tkinter
 from tkintermapview import TkinterMapView
 
 # funcao para puxar e exibir dados
@@ -41,7 +42,7 @@ def search():
         Label(program, text=estado).place(x=400, y=260)
 
         # definir endereco para ir ao map_widget.set_address
-        local = bairro+', '+cidade+", brasil"
+        local = end+' - '+bairro+', '+cidade+", brasil"
 
         # exibir mapa
         map_widget = TkinterMapView(program, width=800, height=450, corner_radius=5, bd=6)
@@ -62,7 +63,7 @@ program.minsize(1080, 800)
 program.maxsize(1080, 800)
 
 # definindo fundo do programa
-bg_img = Image.open("/Users/gabrielhernandes/Documents/Busca CPF - Python/test.jpg")
+bg_img = Image.open("D:/Users/remote/Downloads/PyCEP-Search-main/PyCEP-Search-main/test.jpg")
 resized = bg_img.resize((1080, 800), Image.ANTIALIAS)
 img = ImageTk.PhotoImage(resized)
 Background = Label(program, image=img).place(x=0, y=0)
